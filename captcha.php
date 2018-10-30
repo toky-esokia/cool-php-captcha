@@ -427,7 +427,7 @@ class SimpleCaptcha {
         }
 
         // Full path of font file
-        $fontfile = $this->resourcesPath.'/fonts/'.$fontcfg['font'];
+        $fontfile = __DIR__ . DIRECTORY_SEPARATOR . $this->resourcesPath.'/fonts/'.$fontcfg['font'];
 
 
         /** Increase font-size for shortest words: 9% for each glyp missing */
